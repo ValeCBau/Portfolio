@@ -24,6 +24,7 @@ let counter = 0;
 
 // Updates the carousel position whenever window is resized or on intital load. It recalulates the width of the carousel items and adjusts the transform accordingly.
 function updateCarousel() {
+  if (carouselItems.length === 0) return;
   //Get the width of the first carousel item
   const size = carouselItems[0].clientWidth;
 
